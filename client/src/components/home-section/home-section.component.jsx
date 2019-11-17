@@ -1,7 +1,22 @@
-import react from 'React';
+import React, { useState } from 'react';
 
-import { SectionContainer } from './home-section.styles';
+import HomeSectionHeader from '../home-section-header/home-section-header.component';
+import Grid from '../grid/grid.component';
+import { SectionHolder } from '../../common.styles';
 
-const HomeSection = () => <SectionContainer></SectionContainer>;
+const HomeSection = ({ data }) => {
+  const [selected, setSelected] = useState(data.tabs[0]);
+
+  return (
+    <SectionHolder>
+      <HomeSectionHeader
+        data={data}
+        selected={selected}
+        setSelected={setSelected}
+      />
+      <Grid selected={selected} />
+    </SectionHolder>
+  );
+};
 
 export default HomeSection;

@@ -1,15 +1,13 @@
 import React from 'react';
-import HomeSectionHeader from '../../components/home-section-header/home-section-header.component';
-import Grid from '../../components/grid/grid.component';
-import { SectionHolder } from '../../common.styles';
+import HomeSection from '../../components/home-section/home-section.component';
+import { project } from '../../data';
 
-const Home = () => (
-  <div>
-    <SectionHolder>
-      <HomeSectionHeader />
-      <Grid />
-    </SectionHolder>
-  </div>
-);
+const Home = () => {
+  return (
+    <div>
+      <HomeSection data={project} />
+    </div>
+  );
+};
 
 export default Home;
