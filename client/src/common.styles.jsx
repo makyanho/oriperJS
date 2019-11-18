@@ -15,4 +15,5 @@ export const SectionHolder = styled.section`
   border-radius: 5px;
   /* box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); */
   border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+  margin-bottom: 1rem;
 `;
