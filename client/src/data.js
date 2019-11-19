@@ -316,3 +316,591 @@ export const characters = {
     }
   ]
 };
+export const artworks = {
+  title: '原創插畫',
+  more: {
+    text: '更多插畫',
+    link: null
+  },
+  tabs: [
+    {
+      title: '最新插畫',
+      items: [
+        {
+          id: 11,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '最新名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 12,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 13,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 14,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 15,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 16,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 17,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 18,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 19,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 20,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        }
+      ]
+    },
+    {
+      title: '最熱門的插畫',
+      items: [
+        {
+          id: 11,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '熱門名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 12,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 13,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 14,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 15,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 16,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 17,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 18,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 19,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 20,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        }
+      ]
+    },
+    {
+      title: '推薦插畫',
+      items: [
+        {
+          id: 11,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '推薦名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 12,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 13,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 14,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 15,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 16,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 17,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 18,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 19,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 20,
+          type: 'work',
+          imageUrl: '/images/dummy/artwork.jpg',
+          title: '插畫名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        }
+      ]
+    }
+  ]
+};
+export const fictions = {
+  title: '原創小說',
+  more: {
+    text: '更多小說',
+    link: null
+  },
+  tabs: [
+    {
+      title: '最新小說',
+      items: [
+        {
+          id: 11,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '最新名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 12,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 13,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 14,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 15,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 16,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 17,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 18,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 19,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 20,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        }
+      ]
+    },
+    {
+      title: '最熱門的小說',
+      items: [
+        {
+          id: 11,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '熱門名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 12,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 13,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 14,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 15,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 16,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 17,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 18,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 19,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 20,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        }
+      ]
+    },
+    {
+      title: '推薦小說',
+      items: [
+        {
+          id: 11,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '推薦名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 12,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 13,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 14,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 15,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 16,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 17,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 18,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 19,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        },
+        {
+          id: 20,
+          type: 'work',
+          summary: '這是總結，測試一下斷行，總結目測只能塞廿字。',
+          title: '小說名稱',
+          author: '作者名稱',
+          cmt: 99,
+          fav: 99
+        }
+      ]
+    }
+  ]
+};
