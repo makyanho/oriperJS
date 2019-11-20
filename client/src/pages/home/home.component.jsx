@@ -7,8 +7,8 @@ const Home = () => {
     <div>
       <HomeSection data={project} />
       <HomeSection data={characters} />
-      <HomeSection data={artworks} />
-      <HomeSection data={fictions} />
+      <HomeSection data={artworks} type="works" />
+      <HomeSection data={fictions} type="works" />
     </div>
   );
 };

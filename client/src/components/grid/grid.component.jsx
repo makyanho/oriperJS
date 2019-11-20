@@ -2,9 +2,9 @@ import React from 'react';
 import { GridContainer } from './grid.styles';
 import Cell from '../cell/cell.component';
 
-const Grid = ({ selected }) => {
+const Grid = ({ selected, type }) => {
   return (
-    <GridContainer>
+    <GridContainer type={type}>
       {selected.items.map(item => (
         <Cell key={item.id} item={item} />
       ))}
