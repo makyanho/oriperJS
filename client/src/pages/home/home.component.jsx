@@ -5,7 +5,7 @@ import { project, characters, artworks, fictions } from '../../data';
 const Home = () => {
   return (
     <div>
-      <HomeSection data={project} />
+      <HomeSection data={project} size="big" />
       <HomeSection data={characters} />
       <HomeSection data={artworks} type="works" />
       <HomeSection data={fictions} type="works" />
