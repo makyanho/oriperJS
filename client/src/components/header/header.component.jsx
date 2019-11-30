@@ -5,12 +5,12 @@ import {
   SearchContainer,
   OptionContainer,
   ProfilePic,
-  UserName,
-  HeaderBackground
+  UserName
 } from './header.styles';
+import { GreyBackground } from '../../common.styles';
 
 const Header = () => (
-  <HeaderBackground>
+  <GreyBackground>
     <HeaderContainer>
       <img src="/images/logo.png" alt="" className="logo" />
       <SearchContainer>Search</SearchContainer>
@@ -19,7 +19,7 @@ const Header = () => (
         <UserName>username</UserName>
       </OptionContainer>
     </HeaderContainer>
-  </HeaderBackground>
+  </GreyBackground>
 );
 
 export default Header;

@@ -1,5 +1,9 @@
 import styled, { css } from 'styled-components';
 
+export const GreyBackground = styled.div`
+  background-color: var(--color-grey-dark-1);
+`;
+
 export const ContainerMargin = css`
   margin: 0 1.875rem;
   max-width: 60.625rem;

@@ -1,15 +1,10 @@
 import styled from 'styled-components';
 import { ContainerMargin } from '../../common.styles';
 
-export const HeaderBackground = styled.header`
-  height: 3.125rem;
-  width: 100%;
-  background-color: var(--color-grey-dark-1);
-`;
-
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.header`
   ${ContainerMargin}
 
+  height: 3.125rem;
   display: grid;
   grid-template-columns: min-content 1fr min-content min-content;
   grid-template-rows: auto;

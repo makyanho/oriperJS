@@ -5,6 +5,7 @@ import { GlobalStyle } from './global.styles';
 import { Container } from './common.styles';
 
 import Header from './components/header/header.component';
+import Footer from './components/footer/footer.component';
 import Home from './pages/home/home.component';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Container>
         <Home />
       </Container>
+      <Footer />
     </div>
   );
 }
