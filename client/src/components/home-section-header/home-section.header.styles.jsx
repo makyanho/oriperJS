@@ -38,6 +38,7 @@ export const SectionHeaderMore = styled.a`
   text-decoration: none;
   color: inherit;
   align-items: center;
+  grid-column-start: 5;
 `;
 
 export const SectionHeaderMoreText = styled.span`

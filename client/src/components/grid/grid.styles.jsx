@@ -6,10 +6,16 @@ const WorksGrid = css`
   row-gap: 2.5rem;
 `;
 
+export const NoticeGrid = css`
+  grid-auto-flow: row;
+`;
+
 const getGridStyle = props => {
   switch (props.type) {
     case 'works':
       return WorksGrid;
+    case 'notices':
+      return NoticeGrid;
     default:
       return css``;
   }

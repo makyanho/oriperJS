@@ -1,5 +1,6 @@
 import React from 'react';
 import CharacterCell from '../character-cell/character-cell.component';
+import NoticeCell from '../notice-cell/notice-cell.component';
 import {
   CellContainer,
   CellFooter,
@@ -41,6 +42,8 @@ class Cell extends React.Component {
     switch (type) {
       case 'character':
         return <CharacterCell {...this.props} />;
+      case 'notice':
+        return <NoticeCell {...this.props} />;
       default:
         return (
           <CellContainer imageUrl={imageUrl} size={size}>

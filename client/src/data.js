@@ -904,3 +904,42 @@ export const fictions = {
     }
   ]
 };
+
+export const notices = {
+  title: '網站公告',
+  more: {
+    text: '更多公告',
+    link: null
+  },
+  tabs: [
+    {
+      title: null,
+      items: [
+        {
+          id: 1,
+          type: 'notice',
+          title: '註冊後就能自由投稿，快來與大家共同創作吧！',
+          date: '2018/01/01'
+        },
+        {
+          id: 2,
+          type: 'notice',
+          title: '網站新功能發佈！',
+          date: '2018/01/01'
+        },
+        {
+          id: 3,
+          type: 'notice',
+          title: '教你輕輕輕鬆鬆使用網站。',
+          date: '2018/01/01'
+        },
+        {
+          id: 4,
+          type: 'notice',
+          title: '現在加入即可獲得神秘禮物。',
+          date: '2018/01/01'
+        }
+      ]
+    }
+  ]
+};
