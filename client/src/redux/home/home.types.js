@@ -1,0 +1,7 @@
+const HomeActionTypes = {
+  FETCH_HOME_START: 'FETCH_HOME_START',
+  FETCH_HOME_SUCCESS: 'FETCH_HOME_SUCCESS',
+  FETCH_HOME_FAILURE: 'FETCH_HOME_FAILURE'
+};
+
+export default HomeActionTypes;

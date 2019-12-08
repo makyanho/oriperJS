@@ -10,7 +10,7 @@ export const ContainerMargin = css`
   margin: auto;
 `;
 
-export const Container = styled.div`
+export const Container = styled.main`
   ${ContainerMargin}
 `;
 

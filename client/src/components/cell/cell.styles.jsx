@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const transition = css`
   transition: all 0.5s;
@@ -25,16 +26,15 @@ const getSize = props => {
   }
 };
 
-export const CellContainer = styled.div`
+export const CellContainer = styled(Link)`
   background-size: cover;
   background-position: center;
-  background-image: ${({ imageUrl }) =>
-    imageUrl === undefined ? 'none' : `url(${imageUrl})`};
+  background-image: ${({ imageurl }) =>
+    imageurl === undefined ? 'none' : `url(${imageurl})`};
   background-color: var(--color-grey-light-3);
   position: relative;
   border: 1px solid var(--color-grey-light-2);
   overflow: hidden;
-  cursor: pointer;
 
   display: flex;
   flex-direction: column;
@@ -42,7 +42,14 @@ export const CellContainer = styled.div`
 
   ${getSize}
 
-  &:hover {
+  &:link,
+  &:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:active {
     .footer {
       transform: translateY(0);
     }

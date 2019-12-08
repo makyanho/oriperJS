@@ -1,4 +1,4 @@
-export const project = {
+const project = {
   title: '原創企劃',
   more: {
     text: '更多企劃',
@@ -130,7 +130,7 @@ export const project = {
     }
   ]
 };
-export const characters = {
+const characters = {
   title: '角色設定',
   more: {
     text: '更多角色',
@@ -316,7 +316,7 @@ export const characters = {
     }
   ]
 };
-export const artworks = {
+const artworks = {
   title: '原創插畫',
   more: {
     text: '更多插畫',
@@ -610,7 +610,7 @@ export const artworks = {
     }
   ]
 };
-export const fictions = {
+const fictions = {
   title: '原創小說',
   more: {
     text: '更多小說',
@@ -905,7 +905,7 @@ export const fictions = {
   ]
 };
 
-export const notices = {
+const notices = {
   title: '網站公告',
   more: {
     text: '更多公告',
@@ -943,3 +943,13 @@ export const notices = {
     }
   ]
 };
+
+const data = {
+  project,
+  characters,
+  artworks,
+  fictions,
+  notices
+};
+
+module.exports = data;

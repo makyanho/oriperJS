@@ -1,12 +1,13 @@
 import React from 'react';
-import './App.css';
+import { Route, Switch } from 'react-router-dom';
 
 import { GlobalStyle } from './global.styles';
 import { Container } from './common.styles';
 
 import Header from './components/header/header.component';
 import Footer from './components/footer/footer.component';
-import Home from './pages/home/home.component';
+import Home from './pages/home/home.container';
+import Work from './pages/work/work.component';
 
 function App() {
   return (
@@ -14,7 +15,10 @@ function App() {
       <GlobalStyle />
       <Header />
       <Container>
-        <Home />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/work/:workId" component={Work} />
+        </Switch>
       </Container>
       <Footer />
     </div>

@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const data = require('./data');
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -10,6 +11,10 @@ app.post('/api/test', (req, res) => {
 
 app.get('/api/test', (req, res) => {
   res.send('test get');
+});
+
+app.get('/api/home', (req, res) => {
+  res.send(data);
 });
 
 if (process.env.NODE_ENV === 'production') {

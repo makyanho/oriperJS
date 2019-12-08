@@ -1,8 +1,12 @@
 import React from 'react';
-import HomeSection from '../../components/home-section/home-section.component';
-import { project, characters, artworks, fictions, notices } from '../../data';
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 
-const Home = () => {
+import HomeSection from '../../components/home-section/home-section.component';
+import { selectHomeData } from '../../redux/home/home.selectors';
+
+const Home = ({ homeData }) => {
+  const { project, characters, artworks, fictions, notices } = homeData;
   return (
     <div>
       <HomeSection data={notices} type="notices" />
@@ -14,4 +18,8 @@ const Home = () => {
   );
 };
 
-export default Home;
+const mapStateToProps = createStructuredSelector({
+  homeData: selectHomeData
+});
+
+export default connect(mapStateToProps)(Home);

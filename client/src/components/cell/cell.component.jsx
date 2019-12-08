@@ -38,7 +38,7 @@ class Cell extends React.Component {
 
   render() {
     const { item, size } = this.props;
-    const { type, imageUrl, summary, cmt, fav } = item;
+    const { type, id, imageUrl, summary, cmt, fav } = item;
     switch (type) {
       case 'character':
         return <CharacterCell {...this.props} />;
@@ -46,7 +46,7 @@ class Cell extends React.Component {
         return <NoticeCell {...this.props} />;
       default:
         return (
-          <CellContainer imageUrl={imageUrl} size={size}>
+          <CellContainer to={type + '/' + id} imageurl={imageUrl} size={size}>
             <CellSummary>{summary}</CellSummary>
             {this.renderSwitch(item)}
             <CellFooter size={size} className="footer">
