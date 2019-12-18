@@ -16,8 +16,11 @@ import {
   ProjectCellHeaderDate
 } from './cell.styles';
 
-class Cell extends React.Component {
-  renderSwitch({ type, title, author, date }) {
+function Cell(props) {
+  const {item, size} = props;
+  const {type, id, imageUrl, summary, cmt, fav, title, date, author} = item;
+
+  const getCellHeader = () => {
     switch (type) {
       case 'project':
         return (
@@ -36,20 +39,9 @@ class Cell extends React.Component {
     }
   }
 
-  render() {
-    const { item, size } = this.props;
-    const { type, id, imageUrl, summary, cmt, fav } = item;
-    switch (type) {
-      case 'character':
-        return <CharacterCell {...this.props} />;
-      case 'notice':
-        return <NoticeCell {...this.props} />;
-      default:
-        return (
-          <CellContainer to={type + '/' + id} imageurl={imageUrl} size={size}>
-            <CellSummary>{summary}</CellSummary>
-            {this.renderSwitch(item)}
-            <CellFooter size={size} className="footer">
+  const getCellFooter = () => {
+    return (
+      <CellFooter size={size} className="footer">
               <CellFooterCell>
                 <CellFooterImage src="/images/ico_comment_h13.png" />
                 <CellFooterCnt>{cmt}</CellFooterCnt>
@@ -59,10 +51,26 @@ class Cell extends React.Component {
                 <CellFooterCnt>{fav}</CellFooterCnt>
               </CellFooterCell>
             </CellFooter>
+    );
+  }
+
+  const compileCell = () => {
+    switch (type) {
+      case 'character':
+        return <CharacterCell {...props} />;
+      case 'notice':
+        return <NoticeCell {...props} />;
+      default:
+        return (
+          <CellContainer to={type + '/' + id} imageurl={imageUrl} size={size}>
+            <CellSummary>{summary}</CellSummary>
+            {getCellHeader()}
+            {getCellFooter()}
           </CellContainer>
         );
     }
   }
+  return compileCell();
 }
 
 export default Cell;
