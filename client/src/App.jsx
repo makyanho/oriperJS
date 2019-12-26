@@ -8,6 +8,7 @@ import Header from './components/header/header.component';
 import Footer from './components/footer/footer.component';
 import Home from './pages/home/home.container';
 import Work from './pages/work/work.component';
+import CharacterPage from './pages/character/character.component';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/work/:workId" component={Work} />
+          <Route path="/character/:characterId" component={CharacterPage} />
         </Switch>
       </Container>
       <Footer />

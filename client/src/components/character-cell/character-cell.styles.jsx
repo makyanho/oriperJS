@@ -1,10 +1,11 @@
 import styled, { css } from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const transition = css`
   transition: all 0.5s;
 `;
 
-export const CharacterCellContainer = styled.div`
+export const CharacterCellContainer = styled(Link)`
   background-size: cover;
   background-position: center;
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
@@ -16,7 +17,14 @@ export const CharacterCellContainer = styled.div`
   cursor: pointer;
   border-radius: 50%;
 
-  &:hover {
+  &:link,
+  &:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:active {
     div {
       opacity: 100%;
     }

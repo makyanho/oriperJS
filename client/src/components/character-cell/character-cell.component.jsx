@@ -12,9 +12,9 @@ import {
 } from './character-cell.styles';
 
 const CharacterCell = ({ item }) => {
-  const { imageUrl, title, author, cmt, fav } = item;
+  const { id, imageUrl, title, author, cmt, fav } = item;
   return (
-    <CharacterCellContainer imageUrl={imageUrl}>
+    <CharacterCellContainer to={`character/` + id} imageUrl={imageUrl}>
       <CharacterCellOverlay>
         <CharacterCellDesc>
           <CharacterCellTitle>{title}</CharacterCellTitle>

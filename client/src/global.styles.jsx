@@ -10,8 +10,10 @@ export const GlobalStyle = createGlobalStyle`
   --color-grey-light-3: #cfd5da;
 
   --color-red-1: #ff5559;
+  --color-red-2: #C34143;
 
   --color-overlay-white: #ffffff80;
+  --color-overlay-grey: #7d7d7d80;
 }
 
 * {
