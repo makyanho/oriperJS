@@ -1,4 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+
+import { selectCharacterDetail } from '../../redux/character/character.selectors';
 import {
   Container,
   Title,
@@ -26,40 +30,7 @@ import ReportDropdown from '../report-dropdown/report-dropdown.component';
 import { Button } from '../../common.styles';
 import { SectionHolder } from '../../common.styles';
 
-const CharacterDetail = () => {
-  const character = {
-    name: '角色名字',
-    img: ['/images/dummy/character.png'],
-    desc: '角色詳細設定',
-    tags: ['tag1', 'tag2', 'tag3', 'tag4'],
-    createdAt: '2020/1/1',
-    freetalk: '作者的話',
-    user: {
-      id: 1,
-      name: '用戶名稱',
-      profilePic: '/images/dummy/profilePic.jpg'
-    },
-    attrs: {
-      性別: '女',
-      種族: '人類',
-      生日: null,
-      身高: null,
-      體重: null,
-      職業: null
-    },
-    relatedCharacters: [
-      {
-        name: '角色名字',
-        img: '/images/dummy/profilePic.jpg',
-        relation: 'CP'
-      },
-      {
-        name: '角色名字',
-        img: '/images/dummy/profilePic.jpg',
-        relation: '哥'
-      }
-    ]
-  };
+const CharacterDetail = ({ character }) => {
   const { name, img, desc, tags, createdAt, freetalk, user, attrs } = character;
   return (
     <SectionHolder>
@@ -109,4 +80,8 @@ const CharacterDetail = () => {
   );
 };
 
-export default CharacterDetail;
+const mapStateToProps = createStructuredSelector({
+  character: state => selectCharacterDetail(state)
+});
+
+export default connect(mapStateToProps)(CharacterDetail);

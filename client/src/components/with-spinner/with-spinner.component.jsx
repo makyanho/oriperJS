@@ -5,7 +5,7 @@ import { SpinnerContainer, SpinnerOverlay } from './with-spinner.styles';
 const WithSpinner = WrappedComponent => {
   const Spinner = ({ isLoading, fetchData, ...otherProps }) => {
     useEffect(() => {
-      fetchData();
+      if (fetchData) fetchData();
     }, [fetchData]);
     return isLoading ? (
       <SpinnerOverlay>
