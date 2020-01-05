@@ -14,7 +14,7 @@ const HomeSection = ({ data, type, size }) => {
         selected={selected}
         setSelected={setSelected}
       />
-      <Grid selected={selected} type={type} size={size} />
+      <Grid items={selected.items} type={type} size={size} />
     </SectionHolder>
   );
 };

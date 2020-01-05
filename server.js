@@ -17,7 +17,9 @@ app.get('/api/home', (req, res) => {
   res.send(data);
 });
 
-app.use('/api/v1', require('./characters/characters.routes'));
+app.use('/api/v1/home', require('./routes/home.routes'));
+
+app.use('/api/v1/characters', require('./routes/characters.routes'));
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, 'client/build')));

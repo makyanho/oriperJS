@@ -27,11 +27,22 @@ import {
   Buttons
 } from './character-detail.styles';
 import ReportDropdown from '../report-dropdown/report-dropdown.component';
+import RelatedCharacterGrid from '../related-character-grid/related-character-grid.component';
 import { Button } from '../../common.styles';
 import { SectionHolder } from '../../common.styles';
 
 const CharacterDetail = ({ character }) => {
-  const { name, img, desc, tags, createdAt, freetalk, user, attrs } = character;
+  const {
+    name,
+    img,
+    desc,
+    tags,
+    createdAt,
+    freetalk,
+    user,
+    attrs,
+    characters
+  } = character;
   return (
     <SectionHolder>
       <Container>
@@ -73,6 +84,12 @@ const CharacterDetail = ({ character }) => {
               </UserLink>
               <Freetalk>{freetalk}</Freetalk>
             </UserRelated>
+            <RelatedCharacterGrid
+              title="關係角色"
+              type="character"
+              size="small"
+              items={characters}
+            />
           </Detail>
         </MainGrid>
       </Container>

@@ -14,7 +14,7 @@ import {
 const CharacterCell = ({ item }) => {
   const { id, imageUrl, title, author, cmt, fav } = item;
   return (
-    <CharacterCellContainer to={`character/` + id} imageUrl={imageUrl}>
+    <CharacterCellContainer to={`/character/` + id} imageUrl={imageUrl}>
       <CharacterCellOverlay>
         <CharacterCellDesc>
           <CharacterCellTitle>{title}</CharacterCellTitle>

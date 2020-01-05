@@ -8,7 +8,7 @@ import HomeActionTypes from './home.types';
 export function* fetchHomeAsync() {
   try {
     const response = yield axios({
-      url: 'api/home'
+      url: 'api/v1/home'
     }).then();
     yield put(fetchHomeSuccess(response.data));
   } catch (error) {
