@@ -91,6 +91,7 @@ export const Desc = styled.p`
 
 export const UserRelated = styled.div`
   display: flex;
+  margin-bottom: 1.25rem;
 `;
 
 export const UserLink = styled(Link)`

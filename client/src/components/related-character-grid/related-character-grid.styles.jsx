@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 
 export const Container = styled.div``;
 
-export const Title = styled.h1``;
+export const Title = styled.h1`
+  margin-bottom: 0.5rem;
+`;
 
 export const Cell = styled(Link)`
   background-size: cover;
