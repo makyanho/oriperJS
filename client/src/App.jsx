@@ -8,7 +8,7 @@ import Header from './components/header/header.component';
 import Footer from './components/footer/footer.component';
 import Home from './pages/home/home.container';
 import Work from './pages/work/work.component';
-import CharacterPage from './pages/character/character.component';
+import CharacterPage from './pages/character/character.container';
 
 function App() {
   return (

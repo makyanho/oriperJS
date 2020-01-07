@@ -12,7 +12,7 @@ const mapStateToProps = createStructuredSelector({
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchCharacterDetail: characterId =>
+  fetchData: ({ characterId }) =>
     dispatch(fetchCharacterDetailStart(characterId))
 });
 
