@@ -91,6 +91,18 @@ const character = {
       cmt: 99,
       fav: 99
     }
+  ],
+  recommend: [
+    {
+      id: 1,
+      name: '角色名字',
+      imageUrl: '/images/dummy/profilePic.jpg'
+    },
+    {
+      id: 2,
+      name: '角色名字',
+      imageUrl: '/images/dummy/profilePic.jpg'
+    }
   ]
 };
 
