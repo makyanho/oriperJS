@@ -28,8 +28,7 @@ import {
 } from './character-detail.styles';
 import ReportDropdown from '../report-dropdown/report-dropdown.component';
 import RelatedCharacterGrid from '../related-character-grid/related-character-grid.component';
-import { Button } from '../../common.styles';
-import { SectionHolder } from '../../common.styles';
+import { Button, SectionHolder } from '../../common.styles';
 
 const CharacterDetail = ({ character }) => {
   const {

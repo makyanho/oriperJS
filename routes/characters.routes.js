@@ -92,6 +92,28 @@ const character = {
       fav: 99
     }
   ],
+  comments: [
+    {
+      id: 1,
+      user: {
+        id: 1,
+        name: '使用者名稱',
+        profilePic: '/images/dummy/profilePic.jpg'
+      },
+      date: '2020/01/01',
+      content: '好棒棒'
+    },
+    {
+      id: 2,
+      user: {
+        id: 1,
+        name: '使用者名稱',
+        profilePic: '/images/dummy/profilePic.jpg'
+      },
+      date: '2020/01/01',
+      content: '好棒棒2'
+    }
+  ],
   recommend: [
     {
       id: 1,
