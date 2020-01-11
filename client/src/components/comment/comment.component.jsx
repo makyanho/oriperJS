@@ -15,7 +15,7 @@ const Comment = ({ comment }) => {
   const { id, date, content, user } = comment;
   const { profilePic, name } = user;
   return (
-    <Container key={id}>
+    <Container>
       <ProfilePicLink to={`/users/${user.id}`}>
         <ProfilePic src={profilePic} />
       </ProfilePicLink>
