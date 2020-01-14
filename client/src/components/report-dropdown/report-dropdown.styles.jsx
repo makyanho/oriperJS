@@ -15,14 +15,13 @@ export const DropDownButton = styled(Button)`
   visibility: hidden;
   position: absolute;
   bottom: 2rem;
-  right: -50%;
   white-space: nowrap;
 
   &::after {
     content: '';
     position: absolute;
     top: 100%;
-    left: 50%;
+    left: 1rem;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;

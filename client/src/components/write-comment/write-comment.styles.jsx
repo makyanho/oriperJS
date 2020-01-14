@@ -18,6 +18,7 @@ export const Right = styled.div`
 
 export const Detail = styled.div`
   font-size: 0.75rem;
+  display: flex;
 `;
 
 export const Name = styled.span`
@@ -45,4 +46,38 @@ export const Footer = styled.div`
 
 export const SendButton = styled(Button)`
   margin: 0.5rem 1rem;
+`;
+
+export const DropdownContainer = styled.div`
+  position: relative;
+
+  &:hover {
+    .tooltip {
+      visibility: visible;
+    }
+  }
+`;
+
+export const DropdownMenu = styled.ul`
+  list-style: none;
+  background-color: white;
+  border: 1px solid var(--color-grey-light-2);
+  padding: 0.3125rem 0.75rem;
+  border-radius: 5px;
+  position: absolute;
+  white-space: nowrap;
+`;
+
+export const DropdownMenuItem = styled.li`
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-grey-light-2);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 0.2rem;
+  }
 `;
