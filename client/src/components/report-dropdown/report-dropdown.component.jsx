@@ -4,10 +4,10 @@ import { IoMdArrowDropdown } from 'react-icons/io';
 
 import { DropdownContainer, DropDownButton } from './report-dropdown.styles';
 
-const ReportDropdown = () => {
+const ReportDropdown = ({ pos }) => {
   return (
     <DropdownContainer>
-      <DropDownButton size="small" className="tooltip">
+      <DropDownButton size="small" className="tooltip" pos={pos}>
         檢舉
       </DropDownButton>
       <IconContext.Provider

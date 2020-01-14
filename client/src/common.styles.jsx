@@ -15,6 +15,7 @@ export const Container = styled.main`
 `;
 
 export const SectionHolder = styled.section`
+  position: relative;
   background-color: white;
   border-radius: 5px;
   /* box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); */

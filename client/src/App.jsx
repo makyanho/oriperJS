@@ -9,6 +9,7 @@ import Footer from './components/footer/footer.component';
 import Home from './pages/home/home.container';
 import Work from './pages/work/work.component';
 import CharacterPage from './pages/character/character.container';
+import UserPage from './pages/user/user.component';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/work/:workId" component={Work} />
           <Route path="/character/:characterId" component={CharacterPage} />
+          <Route path="/users/:userId" component={UserPage} />
         </Switch>
       </Container>
       <Footer />
