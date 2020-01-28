@@ -7,15 +7,18 @@ const getSize = props => {
       return css`
         font-size: 1.5rem;
         padding: 0.375rem 1.5rem;
+        border-radius: 1.5rem;
       `;
     case 'small':
       return css`
         font-size: 0.75rem;
         padding: 0.3125rem 1rem;
+        border-radius: 0.75rem;
       `;
     default:
       return css`
         padding: 0.365rem 1rem;
+        border-radius: 1rem;
       `;
   }
 };
@@ -39,7 +42,6 @@ const getColor = props => {
 };
 
 export const Container = styled(Link)`
-  border-radius: 5px;
   border: none;
   color: var(--color-grey-dark-2);
   text-decoration: none;
