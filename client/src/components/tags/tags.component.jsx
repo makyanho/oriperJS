@@ -13,7 +13,7 @@ const Tags = () => {
       <Title>作品標籤</Title>
       <Container>
         {tags.map(tag => (
-          <Tag id={tag.tag} tag={tag} />
+          <Tag key={tag.tag} tag={tag} />
         ))}
       </Container>
     </Section>
